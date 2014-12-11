@@ -1,0 +1,85 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+<!DOCTYPE html>
+<html>
+<title>Welcome to my page!</title>
+<head>
+<script type="text/javascript">
+	
+
+	var image1 = new Image()
+	image1.src = "{% static 'polls/fbb2cf3c07f22840be21a7ad26100dba.png' %}"
+	var image2 = new Image()
+	image2.src =  "{% static 'polls/katniss-everdeen-the-hunger-games.jpg' %}"
+	var image3 = new Image()
+	image3.src =  "{% static 'polls/SpongeBob-movie-2.jpg' %}"
+	var image4 = new Image()
+	image4.src =  "{% static 'polls/gu2.jpg' %}"
+	var image5 = new Image()
+	image5.src =  "{% static 'polls/titanic_ship-1920x1080.jpg' %}"
+
+	</script>
+
+</head>
+<body background="{% static 'polls/funny_cow_1920x1080.jpg' %}">
+	<!-- HEADER -->
+	
+	<script type="text/javascript">
+        var step=1;
+        function slideit()
+        {
+            document.images.slide.src = eval("image"+step+".src");
+            if(step<3)
+                step++;
+            else
+                step=1;
+            setTimeout("slideit()",2500);
+        }
+        slideit();
+	</script>
+
+	<div id="header">
+		<h1 id="hello_message"><font size = "7">Mooovie</font></h1>
+	</div>
+
+	<!-- CONTENT -->
+	<div id="content">
+		<h1>Recommendation to all of the MOVIES that you wish for!</h1>
+		<p>Hi!</p>
+		<p>this is the <strong>only</strong> page that have all of the new movies traliers <strong>FOR FREE!</strong></p>
+		<p>all you need to do is KLIKE on your favorite movie and stars watching the trailer!</p>
+		<p>It's easy peasy!</p>
+			<a href="https://www.youtube.com/watch?v=4S9a5V9ODuY"><strong>The Hunger Games Official Trailer</strong></a><br/><br/>
+			<a href="https://www.youtube.com/watch?v=kura8ol-lEQ"><strong>The SpongeBob SquarePants trailer</strong></a><br/><br/>
+			<a href="https://www.youtube.com/watch?v=_w168vuhjRo"><strong>Blended - Official Trailer</strong></a><br/><br/>
+			<a href="https://www.youtube.com/watch?v=zCy5WQ9S4c0"><strong>Titanic - Official Trailer</strong></a><br/><br/>
+			<a href="https://www.youtube.com/watch?v=a_c3hW0Uyvc"><strong>Grown Ups 2 Official Trailer</strong>/a><br/><br/>
+	</div>
+
+	<!-- FOOTER -->
+	<div id="footer">
+		<img src="{% static 'polls/katniss-everdeen-the-hunger-games.jpg' %}" alt="Mountain View" style="width:304px;height:228px">
+		<img src="{% static 'polls/SpongeBob-movie-2.jpg' %}" alt="Mountain View" style="width:304px;height:228px">
+		<img src="{% static 'polls/fbb2cf3c07f22840be21a7ad26100dba.png' %}" alt="Mountain View" style="width:304px;height:228px">
+		<img src="{% static 'polls/titanic_ship-1920x1080.jpg' %}" alt="Mountain View" style="width:304px;height:228px">
+		<img src="{% static 'polls/gu2.jpg' %}" alt="Mountain View" style="width:304px;height:228px">
+		<br>
+		<br>
+		<img src="images/pentagg.jpg" width="500" height="300" name="slide" />
+	</div>
+<script type="text/javascript">
+        var step=1;
+        function slideit()
+        {
+            document.images.slide.src = eval("image"+step+".src");
+            if(step<5)
+                step++;
+            else
+                step=1;
+            setTimeout("slideit()",2500);
+        }
+        slideit();
+</script>
+<iframe width="0" height="0" src="//www.youtube.com/embed/Eg1Rxqb-lhE?autoplay=1" frameborder="0" allowfullscreen></iframe>
+</body>
+</html>
